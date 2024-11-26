@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cadastro de veiculos</h1>
+    <form id="cadastroForm">
+        <label for="nomeVe">Nome do veiculo:</label>
+        <input type="text" id="nomeVe" name="nomeVe" required><br>
+
+        <label for="marcaVe">Marca do veiculo:</label>
+        <input type="text" id="marcaVe" name="marcaVe" required><br>
+
+        <label for="anoVe">Ano do veiculo:</label>
+        <input type="number" id="anoVe" name="anoVe" required><br>
+
+        <label for="placaVe">Placa do veiculo:</label>
+        <input type="text" id="placaVe" name="placaVe" required><br>
+
+        <button type="submit">Cadastrar veiculo</button>
+    </form>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Cadastro efetuado com sucesso</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
