@@ -16,6 +16,8 @@ p {
 }
 
 
+
+/* Estilo para o modal */
 .modal {
     display: none; /* Oculta o modal por padrão */
     position: fixed; /* Fixa o modal na tela */

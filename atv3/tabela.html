@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garagem</title>
+    <title>Tabela</title>
     <link rel="stylesheet" href="styletabela.css">
 </head>
-
 <body>
-    <h1>Veiculos na Garagem</h1>
+    <h1>Dados da Tabela</h1>
     <table id="tabelaDados">
         <thead>
             <tr>
-                <th>Nome do veiculo</th>
-                <th>Marca do veiculo</th>
-                <th>Ano do veiculo</th>
-                <th>Placa do veiculo</th>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>Ano</th>
+                <th>Placa</th>
+                <th>Id</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
             <!-- Linhas de dados serão adicionadas aqui dinamicamente -->
         </tbody>
     </table>
-
-    <div id="myModal" class="modal">
+    <!-- Definição do modal -->
+    <div id="modalExcluir" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Cadastro efetuado com sucesso</p>
+            <p>Deseja realmente excluir o usuário <span id="usuarioNome"></span>?</p>
+            <button id="confirmarExcluir">Excluir</button>
+            <button id="cancelarExcluir">Cancelar</button>
         </div>
     </div>
-
     <script src="scripttabela.js"></script>
 </body>
-
 </html>
